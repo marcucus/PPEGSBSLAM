@@ -1,5 +1,3 @@
-
-
     <div class="col-md-2" style="float: top;">
         <h5>Choisir le visiteur : </h5>
     </div>
@@ -74,28 +72,19 @@ $uc = filter_input(INPUT_GET, 'uc', FILTER_SANITIZE_STRING);
                      
                         $numAnnee = $unMois['numAnnee'];
                         $numMois = $unMois['numMois'];
-                     
-                        
-                    
-      if(($mois)==$moisASelectionner){ // permet de mettre le nom selectionner en premier dans toutes les pages
-                            
+
+      if(($mois)==$moisASelectionner){ // permet de mettre le nom selectionner en premier dans toutes les pages      
                           ?>
-      
                             <option  selected value="<?php $mois ?>"> <!-- on met l'id comme valeur ,$nom[] est le tableau avec dedans dans cet ordre: le nom, prenompuis l'id -->
                                   <?php echo $numMois . '/' . $numAnnee ?> </option>
-                             
-                       <?php }else{
-                          
-                            
+                       <?php }else{      
                     ?>
                             <option value="<?php echo $mois ;?>">
                                 <?php echo $numMois . '/' . $numAnnee ?> </option>
                             <?php
                         }
    }
-                    ?>           
-           
-                
+?>                       
   </select>
   <div class="input-group-append">
     <input class="btn btn-outline-secondary"  type="submit" value="ok"  role="button">
@@ -104,5 +93,4 @@ $uc = filter_input(INPUT_GET, 'uc', FILTER_SANITIZE_STRING);
 </div>
             </div>
      </div>
-
 </br></br></br>        

@@ -1,4 +1,3 @@
-
     <div class="col-md-2" style="float: top;">
         <h5>Choisir le visiteur : </h5>
     </div>
@@ -51,6 +50,3 @@ $uc = filter_input(INPUT_GET, 'uc', FILTER_SANITIZE_STRING);
     <input class="btn btn-outline-secondary"  type="submit" value="ok"  role="button">
   </div>
 </div>
-      
-                
-                
